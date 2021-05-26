@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Dev</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logos.png" alt="Logo da página">
+
+        <div class="input-inicial"><input type="text" placeholder="Busque por algo"></div>
+        <div class="usuario">
+            <img src="images/minhafoto.jpg" alt="Foto do usuário">
+            <p>Guilherme</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="centro-da-pagina">
+            <nav class="navegacao-principal">
+                <h2>Menu</h2>
+                <div class="div-paginas">
+                    <a href="#"><img class="icone" src="images/codigo.png" alt="Ícone do editor de código"></a>
+                    <p class="icone-texto">Editor de Código</p>
+                </div>
+                <div class="div-paginas">
+                    <a href="#"><img class="icone" src="images/comunidade.png" alt="Ícone da comunidade"></a>
+                    <p class="icone-texto">Comunidade</p>
+                </div>
+            </nav>
+            <div class="codigo">
+                <img class="circulos" src="images/mac_buttons.png" alt="Círculos coloridos">
+                <code>
+                        const pluckDeep = key => obj => key.split ('.'). reduce ((accum, key) =>
+                        accum[key], obj)
+
+                        const compose = (...fns) => res => fns.reduce ((accum, next) => next(accum), res)
+
+                        const unfold = (f, seed) => {
+                            const go = (f, seed, acc) => {
+                        const res = f(seed)
+                        return res ? go(f, res[1], acc.concat ([res[0]])) : acc
+                            }
+                            return go(f, seed, [])
+                        }
+                </code>
+            </div>
+            <section class="detalhes-projeto">
+                <div class="aba-projeto">
+                    <h3>Seu projeto</h3>
+                    <input class="input-projeto" type="text" placeholder="Nome do seu projeto">
+                    <textarea class="input-projeto" cols="50" rows="3" placeholder="Descrição do seu projeto"></textarea>
+                </div class="aba-personalizacao">
+                <h3>Personalização</h3>
+                <select class="input-projeto" id="input-linguagem">
+                    <option>JavaScript</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                </select>
+                <input class="input-projeto" id="botao-enviar" type="submit" value="Salvar projeto">
+            </section>
+        </div>
+
+        <input type="submit" class="botao-highlight" value="Visualizar com o highlight">
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

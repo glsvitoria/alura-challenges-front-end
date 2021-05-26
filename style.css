@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Patron";
+    src: url(fonts/Patron\ -\ PersonalUse.otf) format('opentype');
+}
+
+body {
+    background-color: #051D3B;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    left: 36px;
+    top: 32px;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 230px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+header input {
+    vertical-align: 40px;
+    width: 87%;
+    height: 40%;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 0px;
+    
+}
+
+.input-inicial {
+    margin-top: 25px;
+    display: inline-block;
+    width: 820px;
+    height: 100px;
+}
+
+.usuario {
+    display: flex;
+    width: 130px;
+    margin-top: 34px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 30px 30px 0 0;
+}
+
+.usuario img {
+    width: 40px;
+    height: 40px;
+    border-radius: 80px;
+}
+
+.usuario p {
+    display: inline;
+    vertical-align: 80%;
+    color: white;
+    padding-left: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centro-da-pagina {
+    margin: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao-principal {
+    width: 21%;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navegacao-principal h2 {
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: "Patron", sans-serif;
+}
+
+.navegacao-principal p {
+    color: white;
+    display: inline;
+}
+
+.div-paginas {
+    margin: 10px 0;
+}
+
+.icone {
+    display: inline-block;
+    background-color: #5081FB29;
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.icone:active {
+    background-color: #5080fb;
+}
+
+.icone-texto {
+    vertical-align: 20px;
+    margin-left: 10px;
+}
+
+.codigo {
+    margin-top: 20px;
+    width: 40%;
+    color: white;
+    text-align: justify;
+    border-radius: 12px;
+    border: 30px solid #6BD1FF;
+    padding: 16px;
+    right: 100px;
+    background-color: black;
+}
+
+code pre {
+    width: 40%;
+}
+
+.circulos {
+    margin-bottom: 10px;
+}
+
+.codigo code {
+    border-radius: 3px;
+    font-family: courier, monospace;
+    
+}
+
+.detalhes-projeto {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    width: 20%;
+}
+
+.detalhes-projeto h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    font-size: 0.8em;
+}
+
+.input-projeto {
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 12px 12px 12px 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.295);
+}
+
+
+#botao-enviar {
+    background-color: #5081FB;
+    color: black;
+    margin-top: 20px;
+    transition: 800ms;
+    border: 1px solid black;
+}
+
+#botao-enviar:hover {
+    background-color: #a6bfff;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.botao-highlight {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 15px 13%;
+
+    background-color: #0a376e;
+
+    border: 0;
+    border-radius: 8px;
+    border: 1px solid black;
+
+    transition: 800ms;
+}
+
+.botao-highlight:hover {
+    background-color: rgba(166, 191, 255, 0.521);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-inicial {
+        order: +1;
+        width: 95%;
+        height: 200px;
+        margin-left: 30px;
+    }
+
+    .centro-da-pagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .codigo {
+        width: 80%;
+    }
+
+    .navegacao-principal {
+        margin-top: 140px;
+        width: 80%;
+    }
+
+    .detalhes-projeto {
+        width: 80%;
+    }
+
+}
