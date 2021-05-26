@@ -205,6 +205,10 @@ code pre {
         align-items: center;
     }
 
+    header input {
+        height: 70%;
+    }
+
     .input-inicial {
         order: +1;
         width: 95%;
@@ -227,7 +231,14 @@ code pre {
     }
 
     .detalhes-projeto {
-        width: 80%;
+        width: 100%;
+        top: 70px;
+        position: relative;
+    }
+
+    .botao-highlight {
+        position: relative;
+        bottom: 350px;
     }
 
 }
