@@ -112,101 +112,6 @@ header input {
     margin-left: 10px;
 }
 
-.codigo {
-    margin-top: 20px;
-    width: 40%;
-    color: white;
-    text-align: justify;
-    border-radius: 12px;
-    border: 30px solid #6BD1FF;
-    padding: 16px;
-    right: 100px;
-    background-color: black;
-}
-
-code pre {
-    width: 40%;
-}
-
-.circulos {
-    margin-bottom: 10px;
-}
-
-.codigo code {
-    border-radius: 3px;
-    font-family: courier, monospace;
-    
-}
-
-.detalhes-projeto {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: white;
-    width: 20%;
-}
-
-.detalhes-projeto h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    padding: 10px 0 10px 0;
-    font-size: 0.8em;
-}
-
-.input-projeto {
-    display: block;
-    margin: 0 0 10px 0;
-    padding: 12px 12px 12px 12px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.16);
-    border: 0;
-    width: calc(100% - 24px);
-    color: rgba(255, 255, 255, 0.295);
-}
-
-#input-linguagem {
-    width: 100%;
-}
-
-#input-cor {
-    padding: 4px;
-    height: 30px;
-    width: calc(100% - 8px);
-}
-
-#botao-enviar {
-    background-color: #5081FB;
-    color: black;
-    transition: 800ms;
-    border: 1px solid black;
-    margin: 16px auto 0 auto;
-}
-
-#botao-enviar:hover {
-    background-color: #a6bfff;
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.botao-highlight {
-    display: block;
-    margin: 0 auto 0 auto;
-    padding: 15px 13%;
-
-    background-color: #0a376e;
-
-    border: 0;
-    border-radius: 8px;
-    border: 1px solid black;
-
-    transition: 800ms;
-}
-
-.botao-highlight:hover {
-    background-color: rgba(166, 191, 255, 0.521);
-    transform: scale(1.2);
-    cursor: pointer;
-}
 
 @media screen and (max-width: 768px){
 
@@ -224,31 +129,6 @@ code pre {
         width: 95%;
         height: 200px;
         margin-left: 30px;
-    }
-
-    .centro-da-pagina {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .codigo {
-        width: 80%;
-    }
-
-    .navegacao-principal {
-        margin-top: 140px;
-        width: 80%;
-    }
-
-    .detalhes-projeto {
-        width: 100%;
-        top: 130px;
-        position: relative;
-    }
-
-    .botao-highlight {
-        position: relative;
-        bottom: 350px;
     }
 
 }
