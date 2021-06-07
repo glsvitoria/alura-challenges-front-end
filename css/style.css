@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Patron";
-    src: url(fonts/Patron\ -\ PersonalUse.otf) format('opentype');
+    src: url(../fonts/Patron\ -\ PersonalUse.otf) format('opentype');
 }
 
 body {
@@ -103,9 +103,10 @@ header input {
     border-radius: 16px;
 }
 
-.icone:active {
+.icone.ativo {
     background-color: #5080fb;
 }
+
 
 .icone-texto {
     vertical-align: 20px;
