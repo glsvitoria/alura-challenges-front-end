@@ -115,6 +115,10 @@
     width: calc(100% - 8px);
 }
 
+section option {
+    color: black;
+}
+
 #botao-enviar {
     background-color: #5081FB;
     color: black;
