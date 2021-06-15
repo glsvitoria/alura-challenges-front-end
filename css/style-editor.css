@@ -58,10 +58,6 @@
     background-color: black;
 }
 
-code pre {
-    width: 40%;
-}
-
 .circulos {
     margin-bottom: 10px;
 }
@@ -69,8 +65,19 @@ code pre {
 .codigo code {
     border-radius: 3px;
     font-family: courier, monospace;
-    
 }
+
+.codigo-wrapper {
+    height: 90%;
+}
+
+.preview {
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+    height: 100%;
+}
+
 
 .detalhes-projeto {
     display: flex;

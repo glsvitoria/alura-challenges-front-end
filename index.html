@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-editor.css">
+    <link rel="stylesheet" href="css/dracula.css">
 </head>
 <body>
     <header>
@@ -35,20 +36,9 @@
             </nav>
             <div class="codigo">
                 <img class="circulos" src="images/mac_buttons.png" alt="Círculos coloridos">
-                <code>
-                        const pluckDeep = key => obj => key.split ('.'). reduce ((accum, key) =>
-                        accum[key], obj)
-
-                        const compose = (...fns) => res => fns.reduce ((accum, next) => next(accum), res)
-
-                        const unfold = (f, seed) => {
-                            const go = (f, seed, acc) => {
-                        const res = f(seed)
-                        return res ? go(f, res[1], acc.concat ([res[0]])) : acc
-                            }
-                            return go(f, seed, [])
-                        }
-                </code>
+                <div class="codigo-wrapper">   
+                    <code class="preview hljs" contenteditable="true" aria-label="editor"></code>
+                </div>
             </div>
             <section class="detalhes-projeto">
                 <div class="aba-projeto">
@@ -57,10 +47,10 @@
                     <textarea class="input-projeto" cols="50" rows="3" placeholder="Descrição do seu projeto"></textarea>
                 </div class="aba-personalizacao">
                 <h3>Personalização</h3>
-                <select class="input-projeto" id="input-linguagem">
-                    <option>JavaScript</option>
-                    <option>HTML</option>
-                    <option>CSS</option>
+                <select class="input-projeto linguagem" id="input-linguagem">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
                 </select>
                 <input class="input-projeto" id="input-cor" type="color" value="#5080fb">
                 <input class="input-projeto" id="botao-enviar" type="submit" value="Salvar projeto">
@@ -68,6 +58,9 @@
         </div>
 
         <input type="submit" class="botao-highlight" value="Visualizar com o highlight">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+        <script src="js/index.js"></script>
     </main>
 
     <footer>

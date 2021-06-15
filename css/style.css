@@ -49,7 +49,12 @@ header input {
     margin-top: 34px;
     align-items: center;
     justify-content: flex-end;
-    margin: 30px 30px 0 0;
+    margin: 20px 30px 0 0;
+    height: 60px;
+
+    padding: 0 10px;
+
+    border-radius: 8px;
 }
 
 .usuario img {
@@ -64,6 +69,10 @@ header input {
     color: white;
     padding-left: 7px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.usuario:hover {
+    background-color: #1a3b64;
 }
 
 .centro-da-pagina {
@@ -91,6 +100,7 @@ header input {
     color: white;
     display: inline;
 }
+
 
 .div-paginas {
     margin: 10px 0;
