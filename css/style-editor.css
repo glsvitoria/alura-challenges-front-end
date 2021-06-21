@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 .navegacao-principal {
-    width: 21%;
     margin-top: 20px;
     display: inline-block;
     vertical-align: top;
@@ -24,8 +23,6 @@
     margin: 10px 0;
 }
 
-
-
 .icone:active {
     background-color: #5080fb;
 }
@@ -37,11 +34,11 @@
 
 .codigo {
     margin-top: 20px;
-    width: min(752px, 40%);
+    width: 46%;
     color: white;
     text-align: justify;
     border-radius: 12px;
-    border: 30px solid #6BD1FF;
+    border: 24px solid #6BD1FF;
     padding: 16px;
     right: 100px;
     background-color: black;
@@ -124,7 +121,7 @@ section option {
 
 .botao-highlight {
     display: block;
-    margin: 0 auto 0 auto;
+    margin: 0 43% 0 27%;
     padding: 15px 13%;
 
     background-color: #0a376e;
