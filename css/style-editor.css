@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-.centro-da-pagina {
-    margin: 40px 40px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .navegacao-principal {
     width: 21%;
     margin-top: 20px;
@@ -30,12 +24,7 @@
     margin: 10px 0;
 }
 
-.icone {
-    display: inline-block;
-    background-color: #5081FB29;
-    padding: 16px;
-    border-radius: 16px;
-}
+
 
 .icone:active {
     background-color: #5080fb;
@@ -48,7 +37,7 @@
 
 .codigo {
     margin-top: 20px;
-    width: 40%;
+    width: min(752px, 40%);
     color: white;
     text-align: justify;
     border-radius: 12px;
